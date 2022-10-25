@@ -1,6 +1,3 @@
-nameOverride: ""
-fullnameOverride: ""
-
 # applies to all deployments in this chart
 replicaCount: 1
 images:
@@ -15,9 +12,9 @@ entry:
   tag: "latest"
   serviceType: LoadBalancer
   servicePort: 9000
-  env: []
-  #   - name: PODTATO_PART_NUMBER
-  #     value: "01"
+  env: 
+    - name: PODTATO_PART_NUMBER
+      value: "02"
 hat:
   repositoryBasename: hat
   tag: "latest"
@@ -31,9 +28,9 @@ leftLeg:
   tag: "latest"
   serviceType: ClusterIP
   servicePort: 9002
-  env: []
-  #   - name: PODTATO_PART_NUMBER
-  #     value: "01"
+  env: 
+    - name: PODTATO_PART_NUMBER
+      value: "01"
 leftArm:
   repositoryBasename: left-arm
   tag: "latest"
