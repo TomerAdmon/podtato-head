@@ -23,9 +23,9 @@ hat:
   tag: "latest"
   serviceType: ClusterIP
   servicePort: 9001
-  env: []
-  #   - name: PODTATO_PART_NUMBER
-  #     value: "01"
+  env:
+    - name: PODTATO_PART_NUMBER
+      value: "01"
 leftLeg:
   repositoryBasename: left-leg
   tag: "latest"
