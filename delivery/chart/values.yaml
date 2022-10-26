@@ -17,7 +17,7 @@ entry:
       value: "02"
 hat:
   repositoryBasename: hat
-  tag: "latest"
+  tag: "0.2.7"
   serviceType: ClusterIP
   servicePort: 9001
   env:
@@ -25,7 +25,7 @@ hat:
       value: "01"
 leftLeg:
   repositoryBasename: left-leg
-  tag: "latest"
+  tag: "0.2.7"
   serviceType: ClusterIP
   servicePort: 9002
   env: 
@@ -33,7 +33,7 @@ leftLeg:
       value: "01"
 leftArm:
   repositoryBasename: left-arm
-  tag: "latest"
+  tag: "0.2.7"
   serviceType: ClusterIP
   servicePort: 9003
   env: []
